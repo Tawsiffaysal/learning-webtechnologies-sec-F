@@ -1,0 +1,43 @@
+<employee>
+      <employee id = '1'>
+<name>
+      <firstname>john</firstname>
+      <lastname>Doe<lastname>
+
+       </name>
+      </address>
+      <house>38</house>
+      <area>banani</area>
+</address>
+      <department>account</deparment>
+      <salary>20000</salary>
+      <employee>
+      <employee id = '2'>
+<name>
+     <firstname>Mark</firstname>
+     <lastname>zuckerburg<lastname>
+
+     </name>
+    </address>
+    <house>20</house>
+    <area>Mirpur</area>
+    </address>
+    <department>sales</deparment>
+    <salary>12000</salary>
+
+<employee>
+    <employee id = '3'>
+    <name>
+   <firstname>Ala</firstname>
+    <lastname>Voski<lastname>
+
+</name>
+   </address>
+   <house>38</house>
+   <area>Motijheel</area>
+   </address>
+   <department>Human Resource </deparment>
+   <salary>30000</salary>
+</employee>
+</employee>
+

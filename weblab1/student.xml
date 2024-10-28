@@ -1,0 +1,38 @@
+<student>
+   <student sr = '23'>
+<s1>23<s1>
+<name>
+<firstname> john</firstname>
+<lastname> carter<lastname>
+<admission>
+<day>25</day>
+<month>12</month>
+<year>2015</year>
+</admission>
+<student>
+<student sr = '29'>
+<s1>23<s1>
+<name>
+<firstname> Bob</firstname>
+<lastname> Marshell<lastname>
+<admission>
+<day>13</day>
+<month>01</month>
+<year>1999</year>
+</admission>
+
+<student>
+<student sr = '35'>
+<s1>23<s1>
+<name>
+<firstname> clark </firstname>
+<lastname> kent <lastname>
+<admission>
+<day>17</day>
+<month>06</month>
+<year>2005</year>
+</admission>
+</student>
+</student>
+
+
