@@ -1,0 +1,57 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Shop Management System</title>
+    <script>
+        function validateForm() {
+            let name = document.forms["registerForm"]["name"].value;
+            let contact = document.forms["registerForm"]["contact_no"].value;
+            let username = document.forms["registerForm"]["username"].value;
+            let password = document.forms["registerForm"]["password"].value;
+
+            if (name === "" || contact === "" || username === "" || password === "") {
+                alert("All fields must be filled out");
+                return false;
+            }
+        }
+    </script>
+</head>
+<body>
+
+    <h2>Register New Employee</h2>
+    <form name="registerForm" action="register.php" method="post" onsubmit="return validateForm()">
+        Name: <input type="text" name="name"><br>
+        Contact No: <input type="text" name="contact_no"><br>
+        Username: <input type="text" name="username"><br>
+        Password: <input type="password" name="password"><br>
+        <input type="submit" value="Register">
+    </form>
+
+    <h2>Search Employee Information</h2>
+    <input type="text" id="searchInput" placeholder="Search Employee">
+    <div id="searchResult"></div>
+
+    <script>
+        document.getElementById('searchInput').addEventListener('keyup', function () {
+            let query = this.value;
+            if (query.length > 0) {
+                fetch('search.php', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/x-www-form-urlencoded'
+                    },
+                    body: 'query=' + encodeURIComponent(query)
+                })
+                .then(response => response.text())
+                .then(data => document.getElementById('searchResult').innerHTML = data);
+            } else {
+                document.getElementById('searchResult').innerHTML = '';
+            }
+        });
+    </script>
+
+</body>
+</html>
